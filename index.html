@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Assignment #8 - Local Storage Data Persistence</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Local Storage Assignment</h1>
+      <p class="subtitle">Data Persistence in Browser</p>
+
+      <!-- Task 1 & 3: Save/Update Name -->
+      <div class="card">
+        <h2>Task 1-3: Save & Display Name</h2>
+        <div class="input-group">
+          <input
+            type="text"
+            id="nameInput"
+            placeholder="Enter your name"
+            class="form-input"
+          />
+          <button id="saveNameBtn" class="btn btn-primary">Save Name</button>
+        </div>
+        <div class="display-section">
+          <p class="display-label">Saved Name:</p>
+          <p id="displayName" class="display-value">Not set</p>
+        </div>
+      </div>
+
+      <!-- Task 4: Remove Name -->
+      <div class="card">
+        <h2>Task 4: Remove Name</h2>
+        <button id="removeNameBtn" class="btn btn-secondary">
+          Remove Name
+        </button>
+        <p class="hint">Removes only the name from storage</p>
+      </div>
+
+      <!-- Task 5: Dark Mode -->
+      <div class="card">
+        <h2>Task 5: Dark Mode</h2>
+        <button id="toggleDarkBtn" class="btn btn-dark">
+          Toggle Dark Mode
+        </button>
+        <p class="hint">Dark mode state persists after refresh</p>
+      </div>
+
+      <!-- Task 6: Clear All -->
+      <div class="card">
+        <h2>Task 6: Clear All Data</h2>
+        <button id="clearAllBtn" class="btn btn-danger">Clear All Data</button>
+        <p class="hint">Removes everything from localStorage</p>
+      </div>
+
+      <!-- Storage Info -->
+      <div class="info-panel">
+        <h3>Current Storage Contents:</h3>
+        <pre id="storageInfo">Loading...</pre>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
